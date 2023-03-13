@@ -1,0 +1,27 @@
+<h1>Generate a new SSH key</h1>
+ 
+ 1. Open Terminal
+ 2. Go to the folder that you wanna upload(push) files from your computer to Github using cd command
+ 3. Copy the text below and paste it in your Terminal. Do not forget to change "youremail@blabla.com" to your real email
+  $ ssh-keygen -t rsa -b 4096 -C "youremail@blabla.com"
+ 4. Then you will get ">Enter a file in which to save the key( /home/You/.ssh/something):" ( Here just press enter) 
+ 5. If you already had a ssh key then it will ask you for override permission and just press enter(you will not have this if you did not have any ssh key before)
+ 6. Now you can copy the ssh key. Let's go next step 
+ 7. in case you do not know how to find it , use the command below: 
+  $ cat ~/.ssh/id_ed25519.pub
+
+
+<h2>Adding SSH key to GitHub</h2>
+
+1. Open your GitHub account from your browser
+2. Click your profile photo inthe upper-right corner then click Settings.
+3. In the sidebar under "Access" section you should find "SSH and GPG keys" and click that
+4. Click "New SSH key" 
+5. In the "Title" field, type a label for description. Something like "My personal computer"
+6. As a "Key type" = Authentication Key
+7. As a "Key"= Paste here the ssh public key
+8. Click "Add SSH key"
+  
+
+Conguratilations!   
+
