@@ -16,7 +16,7 @@
 
  $ eval "$(ssh-agent -s)"
  
-2. Ass your SSH provate key to the ssh-agent. If you created your key with different name or if you are adding an existing key that has a different name, replace id_e25519 in the command wirh the name of your private key file.
+2. As your SSH provate key to the ssh-agent. If you created your key with different name or if you are adding an existing key that has a different name, replace id_e25519 in the command wirh the name of your private key file.
 
  $ ssh-add ~/.ssh/id_ed25519
 
