@@ -1,0 +1,44 @@
+Git Basics- Undo 
+
+Note: "amend" commits are only used if your files still in local which means you have not push them yet. 
+1. 
+$ git commit --amend
+
+Let's have look another example: 
+
+$ git commit -m "Version control"     (let's say you have forgot to add another file but already commited it. Since you have not pushed yet: 
+$ git add forgotten_file
+$git commit --amend    (when you run this two commands then it will be like first commit never happened. 
+
+
+2. 
+
+Let's say you’ve changed two files and want to commit them as two separate changes, but you accidentally type git add * and stage them both. How can you unstage one of the two? 
+This two commands below do the similar job.
+
+$ git reset HEAD unstaging_file   (When you run this command, them unstaging_file will out of staging area. So that means you can freely commit your other file.)
+
+This command came with 2.23.0 version. 
+
+$ git restore --staged  unstaging_file   (When you run this command, them unstaging_file will out of staging area. So that means you can freely commit your other file.)
+
+
+
+3. 
+
+What if you realize that you don’t want to keep your changes to the modifie_file? How can you easily unmodify it — revert it back to what it looked like when you last committed 
+ 
+This two commands below do the similar job.
+
+
+$ git checkout -- modified_file   (After that the changes have been reverted)
+
+$ git restore  modified_file   (After that the changes have been reverted)
+
+
+NOTE: this is a dangerous command. You should be really careful when you are using it
+
+
+
+
+
