@@ -1,0 +1,49 @@
+Git Basics- Viewing the Commit History
+
+1. git log
+By default with no arguments, "git log" commmand lists the commits made in that repository in reverse chronological order. 
+
+2. git log -p -2
+This is another helpful option.
+"-p" shows difference introduced in each commit
+"-2" shows last two entries
+
+3. git log --stat
+
+"-stat" option prints below each commit entry a list of modified files, how msny files were changed, and how many lines in those files were added and removed. It also puts a summary of ithe info at the end. 
+
+4. git log --pretty=oneline 
+This option changes the log output to formats other than the default. 
+"oneline" value for this option prints each comit on a ingle line, which is useful if you are looking at a lot of commits. 
+
+5. git log --pretty=format: "%h - %an, %ar : %s" wird output for instance: 
+ca33a8d - Emrullah Baykara, 2 years ago : Rebuild version number
+jj98daj - Emrullah Baykara, 2 years ago : Delete some unnecesary files
+.
+.
+.
+
+Useful specifiers for "git log --pretty=format" 
+%H  commit hash
+%h  Abbreviated commit hash
+%T  Tree hash
+%t  Abbreviated tree hash
+%P  Parent hashes
+%p  Abbreviared parent hashes
+%an Author name
+%ae Author email
+%ad Author date(format respects the --date=option)
+%ar Author date, relative
+%cn Committer name
+%ce Committer email
+%cd Committer date 
+%cr Committer date, relative
+%s  Subject
+
+
+
+There is stil a few more options, onces your hands are on terminal then you will learn them by time and doing...
+
+
+Congratulations! You have learned an important part of Git today. 
+ 
