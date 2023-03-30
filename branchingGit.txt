@@ -1,0 +1,23 @@
+1. To Create a New Brach
+  $ git branch test (you can choose any name you want. But of course it is better to be related to the project )
+
+2. To Switch an existing Brach 
+  $ git checkout main (you will be switching  in branch main here)
+
+3. If you type "git log" command, the pointer will point always by default to 
+  main/master branch. And it will not show other branches. To see all, "git log   --all" or just specific one "git log test"
+
+4. To create a branch and switching to it at the same time. 
+  $ git checkout -b <newbranchsname>
+  or
+  $ git switch test  (here is for already existing one)
+  $ git switch -c <newbranchsname>
+
+  4.1. To return previous one
+   $ git switch -
+
+5. To delete a branch 
+  $ git branch -d <brancname> 
+
+
+
